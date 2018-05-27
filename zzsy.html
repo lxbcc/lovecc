@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zhongzhi</title>
+	<style>
+	    *{
+	    	padding: 0;
+	    	margin: 0;
+	    }
+	    ul,li ol{
+	    	list-style: none;
+	    }
+	    a{
+	    	text-decoration: none;
+	    }
+	    .clearfix:after{
+		    content:"";
+		    height: 0;
+		    display: block;
+		    clear:both;
+	    }
+	    .header{
+	    	height: 173px;
+	    	background-color:#f0f0f1;
+	    }
+	    .logo{
+	    	text-align: center;
+	    	height: 125px;
+	    }
+	    .logo img{
+	    	margin-top: 30px;
+	    }
+	    .nav{
+	    	height: 46px;
+	    	width: 675px;
+	    	background-color: #ffffff;
+	    	margin: 0 auto;
+	    	border-radius: 22.5px;
+	    }
+	    .nav li{
+	    	float:left;
+	    	height: 45px;
+	    	padding:0 26px ;
+	    	line-height: 45px;
+	    	background: url(./zz02.png) no-repeat right center;
+	    }
+	    .nav li a:hover{
+	    	display:block;
+	    	height: 42px;
+	    	border-bottom: 3px solid #1e50ae;
+	    	font-family: 微软雅黑;
+	    }
+	    .nav li:last-child{
+	    	background: none;
+	    }
+	    .c{
+	    	height: 405px;
+	    	background: url(./zz03.png) no-repeat center center;
+	    }
+        .lc0{
+        	width: 1200px;
+        	height: 810px;
+        	background-color:#ffffff;
+            margin: 0 auto;
+        }
+        .lc1{
+        	width: 300px;
+        	height: 370px;
+        	float:left;
+        }
+        .lc1 p{
+        	text-align: center;
+        }
+        .lc1 ul{
+        	margin-left:125px;
+        }
+        .lc11{
+		text-align: center;
+	    }
+	    .lc1 li{
+        	list-style: url(./zz12.png);
+        }
+        .lc2{
+        	width: 300px;
+        	height: 270px;
+        	text-align: center;
+        	float: left;
+        }
+        .lc2 li{
+        	list-style: url(./zz12.png);
+        }
+	.solution{
+		height: 712px;
+		text-align: center;
+		background: url(./zz13_02.png) no-repeat center center;
+	}
+	.soiution ul{
+		width:1076px;
+		margin: 0 auto;
+	}
+	.solution li{
+		float: left;
+		margin-right: 50px;
+	}
+	.solution li.last{
+		margin-right: 0px;
+	}
+	.solution button{
+		width: 230px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		margin-right: 550;
+		color: #fff;
+		border:2px solid #fff;
+		border-radius: 22.5px;
+		background: transparent;		
+	}
+	.nnn{
+		height: 297px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.nnn li {
+		margin-right: 30px;
+	}
+	.nnn li:last-child {
+		margin-right: none;
+		margin-top: 130px;
+	}
+
+	.lc4{
+            width: 1200px;
+            height: 900px;
+            background-color:#ffffff;
+            margin: 0 auto;
+        }
+.latest1{
+	width: 1200px;
+	height: 771px;
+	margin: 0 auto;
+}
+.latest1 li{
+	float: left;
+}
+.wise{
+	width: 600px;
+	height: 380px;
+}
+.wise img{
+	margin-right: 35px;
+	margin-top: 25px;
+}
+.wise1{
+	width: 600px;
+	height: 380px;
+	margin-top: 50px;
+}
+.one{
+	margin-right: 419px;
+	float: left;
+	line-height: 55px;
+}
+.two{
+	margin-right: 264px;
+	float: left;
+	margin-bottom: 25px;
+}
+.three{
+	margin-right: 72px;
+	float: left;
+}
+.four{
+	margin-right: 275px;
+	margin-bottom: 30px;
+	float: left;
+}
+.wise1 h3{
+	clear: both;
+	font-size: 22px;
+	color: #333333;
+
+}
+.wise1 h5{
+	font-weight: normal;
+	font-size: 15px;
+	color: #333333;
+
+}
+.wise1 p{
+	font-size: 14px;
+	line-height: 34px;
+	color: #9e9e9e;
+}
+.wise1 button{
+	font-size: 16px;
+	color: #1141a3;
+	width: 139px;
+	height: 40px;
+	background: none;
+	border: 1px solid #1141a3;
+	border-radius: 20px;
+	margin-bottom: 63px;
+}
+.why{
+	width:532px;
+	height:285px;
+	margin-left: 70px;
+
+}
+.why li{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    border-bottom:1px dotted #dcdcdc;
+}
+.why a{
+	font-size: 14px;
+	color: #797979;
+}
+.why1{
+	width: 532px;
+	height: 285px;
+	margin: 0 auto;
+}
+.why1 li{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom:1px dotted #dcdcdc;
+}
+.why1 a{
+	font-size: 14px;
+	color: #797979;
+}
+    .mmp{
+    	height: 105px;
+    	width: 1560px;
+    	background-color: #f5f5f5
+    }
+    .mmp1{
+    	width: 1200px;
+    	height: 105px;
+    	margin: 0 auto;
+    }
+    .mvp{
+    	float:left;
+	    height: 105px;
+        width: 270px;
+        margin-top: 20px; 
+    }
+    .mvp p{
+    	border-right: 2px solid #e0e0e0;
+    	padding-right: 10px;
+    }
+    .mvp1{
+    	float:left;
+	    height: 105px;
+        width: 270px;
+        margin-top: 20px; 
+    	background-image: none;
+    }
+    .mvp img{
+    	float: left;
+    	margin-left: 20px;
+    }
+    .mvp1 img{
+    	float: left;
+    	margin-left: 20px;
+    }
+    .mm{
+	width: 1560px;
+	height: 387px;
+	background-color: #323232;
+	margin: 0 auto;
+}
+.ii{
+	width: 1200px;
+	height: 217px;
+	margin: 0 auto 51px auto;
+}
+.mm1{
+	float: left;
+	margin-right: 106px;
+	margin-top: 75px;
+}
+.dute{
+	font-size: 18px;
+	font-weight: lighter;
+	padding-bottom: 31px;
+}
+.duteone{
+	font-size: 14px;
+	font-weight: lighter;
+	padding-bottom: 22px;
+}
+.dutet{
+	font-size: 14px;
+	font-weight: lighter;
+}
+.o{
+	width: 237px;
+	height: 170px;
+	float: left;
+	margin-top: 71px;
+	margin-right: 39px;
+}
+.o img{
+	float: left;
+	margin-right: 36px;
+}
+.o p{
+	color: #fff;
+	padding-bottom: 6px;
+	font-size: 18px;
+	font-weight: lighter;
+	border-right: 1px solid #9c9c9c;
+	padding-right: 36px;
+}
+.aaa{
+	width: 210px;
+	height: 128px;
+	margin-top: 89px;
+	float: left;
+}
+.aaone{
+	font-size: 18px;
+	font-weight: lighter;
+	padding-bottom: 23px;
+	color: #f5f5f5;
+}
+.fivef{
+	list-style-image: url(./zz29.png);
+	/* padding-left: 19px; */
+	font-size: 16px;
+	font-weight: lighter;
+	color: #f5f5f5;
+	list-style-position: inside;
+	padding-bottom: 32px;
+}
+.fives{
+	list-style-image: url('./zz30.png');
+	list-style-position: inside;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #f5f5f5;
+}
+.sixthaa{
+	width: 756px;
+	height: 15px;
+	margin: 37px auto 25px auto;
+}
+.sixthaa li>a{
+	color: #f5f5f5;
+	font-size: 14px;
+	font-weight: lighter;
+}
+.sixthaa li{
+	float: left;
+	padding: 0 13px;
+	border-right: 1px solid #d6d6d6;
+}
+.sixtt{
+	font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 35px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="logo">
+		<img src="./zz01.png" alt="">
+	</div>
+	  <ul class="nav">
+		<li><a href="">首页</a></li>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">中智服务</a></li>
+		<li><a href="">解决方案</a></li>
+		<li><a href="">最新资讯</a></li>
+		<li><a href="">联系我们</a></li>
+	  </ul>
+</div>
+<div class="c"></div>
+<div class="lc0">
+    <h3 style="text-align: center;padding-top:61px;margin-bottom:25px;">服务项目</h3>
+    <p style="text-align: center;margin-bottom:48px;">AERVICE ITEMS</p>
+    <div class="lc1">
+       <div class="lc11">
+       	<img src="./zz04.png" alt="">
+    	<p>工商代理</p>
+       </div>
+    	<ul class="clearfix">
+    		<li>公司注册</li>
+    		<li>公司注册地址</li>
+    		<li>分公司注册</li>
+    		<li>外资注册</li>
+    		<li>股权变更</li>
+    		<li>公司注销</li>
+    	</ul>
+    </div>
+    <div class="lc1">
+        <div class="lc11">
+        <img src="./zz05.png"lt="">
+    	<p>财务代理</p>
+    	</div>
+    	<ul>
+    		<li>代理记账</li>
+    		<li>税务筹划</li>
+    		<li>审计服务</li>
+    	</ul>
+    </div>
+    <div class="lc1">
+        <div class="lc11">
+    	<img src="./zz06.png" alt="">
+    	<p>资质服务</p>
+    	</div>
+    	<ul>
+    		<li>各类许可证</li>
+    		<li>资质审评</li>
+    		<li>高新企业</li>
+    		<li>商标专利</li>
+    	</ul>
+    </div>
+    <div class="lc1">
+        <div class="lc11">
+    	<img src="./zz07.png" alt="">
+    	<p>特色服务</p>
+    	</div>
+    </div>
+    <div class="lc2">
+    	<img src="./zz08.png" alt="">
+    	<p>公积金社保代理</p>
+    </div>
+    <div class="lc2">
+    	<img src="./zz09.png" alt="">
+    	<p>办公室租赁</p>
+    </div>
+    <div class="lc2">
+    	<img src="./zz10.png" alt="">
+    	<p>营业执照转让</p>
+    </div>
+    <div class="lc2">
+    	<img src="./zz11.png" alt="">
+    	<p>法律服务</p>
+    </div>
+</div>
+<div class="solution">
+    <h3 style="text-align: center;padding-top:61px;margin-bottom:25px;">解决方案</h3>
+    <p style="text-align: center;margin-bottom:48px;">SOLUTION</p>
+    <div class="nnn">
+    <ul>
+        <li style="margin-top:130px;"><a href=""><img src="./zz25.png" alt=""></a></li>
+    	<li><a href=""><img src="./zz14_1.png" alt=""></a></li>
+    	<li><a href=""><img src="./zz14_2.png" alt=""></a></li>
+    	<li><a href=""><img src="./zz14_3_03.png" alt=""></a></li>
+    	<li><a href=""><img src="./zz14_4_03.png" alt=""></a></li>
+    	<li><a href=""><img src="./zz26.png" alt=""></a></li>
+    </ul>
+    </div>
+	<div style="width: 230px;height: 50px;margin:0 auto;"><button style="text-align:center;margin-top:30px;">了解更多>></button></div>
+</div>
+<div class="lc4">
+    <h2 style="text-align: center;padding-top:61px;margin-bottom:25px;">最新资讯</h2>
+	<p style="text-align: center;margin-bottom:48px;">LATEST INFORMATION</p>
+    <div class="latest1">
+		<ul>
+		<li>
+			<div class="wise">
+				<img src="./zz20.png">
+			</div>
+		</li>
+		<li>
+			<div class="wise1">
+			<ul>
+				<li class="one"><h4>交易明智＆方便</h4></li>
+				<li class="two"><h5>TRANSACTION WISE＆CONVENIENT</h5></li>
+				<li class="three"><p>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分</p></li>
+				<li class="three"><p>析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界</p></li>
+				<li class="four"><p>面来管理他们的账户，并能轻松查看图标和报告。</p></li>
+				<li><button>了解详情</button></li>
+			</ul>
+			</div>
+			</ul>
+		<ul>
+		<li>
+		<div class="why">
+		<ul>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+			</ul>
+			</div>
+			</li>
+			<li>
+			<div class="why1">
+			<ul>
+				<li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+	           <li><a href="">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</a></li>
+			</ul>
+			</div>
+			</li>
+		</ul>
+		</div>
+</div>
+<div class="mmp">
+    <div class="mmp1">
+      <div class="mvp">
+		<img src="./zz21.png" alt="">
+		<p>资质认证</p>
+		<p>服务商100%实名认证</p>
+	  </div>
+	  <div class="mvp">
+		<img src="./zz21.png" alt="">
+		<p>支付安全</p>
+		<p>明码标价支付及信息安全</p>
+	  </div>		
+	  <div class="mvp">
+		<img src="./zz21.png" alt="">
+		<p>保险赔付</p>
+		<p>为您提供担保赔付</p>
+	  </div>	
+	  <div class="mvp1">
+		<img src="./zz21.png" alt="">
+		<p>售后无忧</p>
+		<p>服务出问题经理全程跟进</p>
+	  </div>	
+    </div>
+</div>
+<div>
+	<div class="mm">
+		<div class="ii">
+			<div>
+				<ul class="mm1 clear">
+					<li class="dute"><a href="#" style="color: #fff;">中智信元</a></li>
+					<li class="duteone"><a href="#" style="color: #fff;">加入我们</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">联系我们</a></li>
+					<li class="dutet"><a href="#"  style="color: #fff;">最新动态</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mm1 clear">
+					<li class="dute"><a href="#"  style="color: #fff;">订单服务</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">支付方式</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">退款说明</a></li>
+					<li class="dutet"><a href="#"  style="color: #fff;">购买流程</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mm1 clear">
+					<li class="dute"><a href="#"  style="color: #fff;">售后服务</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">在线问答</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">服务中心</a></li>
+					<li class="dutet"><a href="#"  style="color: #fff;">售后政策</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mm1 clear">
+					<li class="dute"><a href="#"  style="color: #fff;">常见问题</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">新手帮助</a></li>
+					<li class="duteone"><a href="#"  style="color: #fff;">支付帮助</a></li>
+					<li class="dutet"><a href="#"  style="color: #fff;">开具发票</a></li>
+				</ul>
+			</div>
+			<div class="clear o">
+				<img src="./zz28.png">
+				<p>微</p>
+	            <p>信</p>
+	            <p>扫</p>
+	            <p>一</p>
+	            <p>扫</p>
+			</div>
+			<div class="aaa">
+				<p class="aaone">咨询热线：400-000-0000</p>
+				<ul>
+					<li class="fivef">1234567888@qq.com</li>
+					<li class="fives">某某企业网站官方微信</li>
+				</ul>
+			</div>
+		</div>
+		<hr style="border:none;height:1px;background:#bababa;">
+		<div class="sixthaa">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">工商代理</a></li>
+				<li><a href="#">财务代记账</a></li>
+				<li><a href="#">股权交易与变更</a></li>
+				<li><a href="#">企业贷款</a></li>
+				<li><a href="#">办公室租赁</a></li>
+				<li><a href="#">社会公积金代理</a></li>
+				<li style="border:none;"><a href="#">法律服务</a></li>
+			</ul>
+		</div>
+		<p class="sixtt"> 2017-2018 中智信元有限公司 版权所有</p>
+	</div>
+</div>
+</body>
+</html>
